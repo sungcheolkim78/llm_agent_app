@@ -1,0 +1,8 @@
+instructor
+atomic-agents
+openai
+anthropic
+pydantic-settings
+pydantic[dotenv]
+black
+ipykernel

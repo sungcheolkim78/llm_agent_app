@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: str
     ANTHROPIC_API_KEY: str
 
-    model_config = SettingsConfigDict(env_file='.env', env_file_encoding='utf-8', extra='ignore')
+    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
 
 # Define your desired output structure
@@ -69,7 +69,7 @@ def get_from_anthropic(settings):
 
 
 @timing
-def get_from_ollama(settings, hook_on:bool = False):
+def get_from_ollama(settings, hook_on: bool = False):
     client = instructor.from_openai(
         OpenAI(base_url="http://192.168.1.4:11434/v1", api_key="ollama"),
         mode=instructor.Mode.JSON,
