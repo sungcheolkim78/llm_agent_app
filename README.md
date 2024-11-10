@@ -10,6 +10,8 @@ This is a simple application that demonstrates how to use the LLM Agent API to c
 
 - Python 3.10 or higher
 - OpenAI API key
+- [instructor](https://python.useinstructor.com/prompting/#decomposition)
+-
 
 ### Installation
 
